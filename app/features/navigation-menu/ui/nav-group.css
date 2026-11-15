@@ -1,0 +1,130 @@
+.nav-group {
+  position: relative;
+}
+
+.nav-group__trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-ubuntu);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: hsl(0deg 0% 100% / 75%);
+}
+
+.nav-group__trigger:hover,
+.nav-group.is-open .nav-group__trigger {
+  color: var(--white);
+}
+
+.nav-group__trigger:hover .nav-group__label,
+.nav-group.is-open .nav-group__label {
+  text-decoration: underline;
+  text-underline-offset: 0.3125rem;
+  text-decoration-thickness: 1px;
+}
+
+.nav-group__chevron {
+  flex-shrink: 0;
+  color: var(--white);
+  opacity: 0.75;
+}
+
+.nav-group.is-open .nav-group__chevron {
+  rotate: 180deg;
+}
+
+.nav-group__menu {
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  left: -1.5625rem;
+  z-index: 10;
+  display: grid;
+  gap: 0.75rem;
+  width: 10.4375rem;
+  padding: 1.875rem 1.5rem 1.8125rem;
+  border-radius: var(--radius-card);
+  background-color: var(--white);
+  box-shadow: var(--shadow-card);
+  font-family: var(--font-ubuntu);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+.nav-group__menu[hidden] {
+  display: none;
+}
+
+.nav-group__link {
+  display: block;
+  font-weight: 400;
+  color: var(--gray-900);
+}
+
+.nav-group__link:hover {
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .nav-group__chevron {
+    transition: rotate 0.2s ease;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .nav-group {
+    display: grid;
+    justify-items: center;
+  }
+
+  .nav-group__trigger {
+    font-family: var(--font-overpass);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--blue-900);
+  }
+
+  .nav-group__trigger:hover,
+  .nav-group.is-open .nav-group__trigger {
+    color: var(--blue-900);
+  }
+
+  .nav-group.is-open .nav-group__trigger {
+    opacity: 0.75;
+  }
+
+  .nav-group__trigger:hover .nav-group__label,
+  .nav-group.is-open .nav-group__label {
+    text-decoration: none;
+  }
+
+  .nav-group__chevron {
+    color: var(--red-400);
+    opacity: 1;
+  }
+
+  .nav-group__menu {
+    position: static;
+    justify-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1.125rem;
+    padding: 1.5rem;
+    background-color: var(--gray-200);
+    box-shadow: none;
+    font-family: var(--font-overpass);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .nav-group__link {
+    font-weight: 600;
+    color: var(--gray-600);
+  }
+
+  .nav-group__link:hover {
+    font-weight: 600;
+    color: var(--blue-900);
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Mentor | Blogr landing page</title>
+    <meta name="description" content="Blogr is a modern publishing platform. Grow your audience and build your online brand.">
+    <meta name="theme-color" content="#ff8f71">
+    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%images/favicon-32x32.png">
+    <link rel="preload" href="%BASE_URL%fonts/Overpass-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="%BASE_URL%fonts/Ubuntu-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="%BASE_URL%fonts/Ubuntu-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+    {{content-for "head"}}
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="/@embroider/virtual/vendor.js"></script>
+    <script type="module">
+      import Application from './app/app';
+      import environment from './app/config/environment';
+
+      Application.create(environment.APP);
+    </script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>

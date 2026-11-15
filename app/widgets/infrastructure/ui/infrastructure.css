@@ -1,0 +1,52 @@
+.infrastructure {
+  overflow-x: clip;
+}
+
+.infrastructure__band {
+  position: relative;
+  min-height: 25rem;
+  padding-block: 7.25rem 4rem;
+  border-radius: 0 var(--radius-section);
+  background:
+    url("/images/bg-pattern-circles.svg") no-repeat
+      calc(50% - 26.75rem) -31.875rem,
+    var(--gradient-body);
+}
+
+.infrastructure__illustration {
+  position: absolute;
+  top: -4.25rem;
+  left: calc(50% - 37.1875rem);
+  max-width: none;
+  pointer-events: none;
+}
+
+.infrastructure__features {
+  position: relative;
+  width: min(50% - 1rem - var(--gutter), 33.75rem);
+  margin-left: calc(50% + 1rem);
+}
+
+@media (max-width: 63.9375em) {
+  .infrastructure__band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 var(--gutter) 7.0625rem;
+    background:
+      url("/images/bg-pattern-circles.svg") no-repeat 50% -15rem / 37.5rem auto,
+      var(--gradient-body-mobile);
+  }
+
+  .infrastructure__illustration {
+    position: static;
+    width: 23.8125rem;
+    height: auto;
+    margin-top: -11.625rem;
+  }
+
+  .infrastructure__features {
+    width: min(100%, 33.75rem);
+    margin: 0.75rem 0 0;
+  }
+}

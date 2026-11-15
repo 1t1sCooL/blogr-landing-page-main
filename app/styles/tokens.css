@@ -1,0 +1,45 @@
+:root {
+  --red-500: hsl(356deg 100% 66%);
+  --red-400: hsl(355deg 100% 74%);
+  --blue-900: hsl(208deg 49% 24%);
+  --white: hsl(0deg 100% 100%);
+  --gray-100: hsl(0deg 0% 98%);
+  --gray-200: hsl(240deg 9% 94%);
+  --gray-300: hsl(240deg 2% 88%);
+  --gray-600: hsl(207deg 13% 34%);
+  --gray-900: hsl(240deg 10% 16%);
+  --orange-300: hsl(13deg 100% 72%);
+  --red-550: hsl(353deg 100% 62%);
+  --purple-950: hsl(237deg 17% 21%);
+  --purple-900: hsl(237deg 23% 31%);
+
+  --gradient-intro: linear-gradient(115deg, var(--orange-300), var(--red-550));
+  --gradient-intro-mobile: linear-gradient(
+    150deg,
+    var(--orange-300),
+    var(--red-550)
+  );
+  --gradient-body: linear-gradient(
+    to right,
+    var(--purple-950),
+    var(--purple-900)
+  );
+  --gradient-body-mobile: linear-gradient(
+    160deg,
+    var(--purple-950),
+    var(--purple-900)
+  );
+
+  --font-overpass: "Overpass", system-ui, sans-serif;
+  --font-ubuntu: "Ubuntu", system-ui, sans-serif;
+
+  --heading-tracking: -0.04em;
+  --title-tracking: -0.009em;
+  --body-tracking: 0.031em;
+
+  --container: 69.375rem;
+  --gutter: 1.5rem;
+  --radius-section: 6.25rem;
+  --radius-card: 0.3125rem;
+  --shadow-card: 0 1.25rem 1.25rem hsl(237deg 17% 21% / 15%);
+}

@@ -1,0 +1,10 @@
+.navigation-menu {
+  display: flex;
+  flex: 1;
+}
+
+@media (max-width: 63.9375em) {
+  .navigation-menu {
+    flex: none;
+  }
+}

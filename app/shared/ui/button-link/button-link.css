@@ -1,0 +1,53 @@
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8.5rem;
+  height: 3rem;
+  padding-inline: 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--font-ubuntu);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.button-link--solid {
+  background-color: var(--white);
+  color: var(--red-500);
+}
+
+.button-link--solid:hover {
+  background-color: var(--red-400);
+  color: var(--white);
+}
+
+.button-link--outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.button-link--outline:hover {
+  background-color: var(--white);
+  color: var(--red-500);
+}
+
+.button-link--gradient {
+  background-image: var(--gradient-intro);
+  color: var(--white);
+}
+
+.button-link--gradient:hover {
+  background-image: none;
+  background-color: var(--red-400);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .button-link {
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+}

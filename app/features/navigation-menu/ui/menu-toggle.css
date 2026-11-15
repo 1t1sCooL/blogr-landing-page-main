@@ -1,0 +1,13 @@
+.menu-toggle {
+  display: none;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--white);
+}
+
+@media (max-width: 63.9375em) {
+  .menu-toggle {
+    display: grid;
+  }
+}

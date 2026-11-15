@@ -1,0 +1,39 @@
+.tooling {
+  position: relative;
+  overflow-x: clip;
+  padding-block: 19.0625rem 18.875rem;
+}
+
+.tooling__illustration {
+  position: absolute;
+  top: 7.25rem;
+  left: calc(50% - 62.4375rem);
+  max-width: none;
+  pointer-events: none;
+}
+
+.tooling__features {
+  position: relative;
+  width: min(50% - 0.9375rem, 33.75rem);
+  margin-left: calc(50% + 1rem);
+}
+
+@media (max-width: 63.9375em) {
+  .tooling {
+    padding-block: 3.9375rem 6.0625rem;
+  }
+
+  .tooling__illustration {
+    position: relative;
+    top: auto;
+    left: 50%;
+    width: 31.125rem;
+    height: auto;
+    translate: -50% 0;
+  }
+
+  .tooling__features {
+    width: auto;
+    margin: 2.4375rem 0 0 0.5rem;
+  }
+}

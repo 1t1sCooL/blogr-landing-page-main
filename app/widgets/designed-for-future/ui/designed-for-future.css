@@ -1,0 +1,57 @@
+.designed {
+  position: relative;
+  overflow-x: clip;
+  padding-block: 9.75rem 16rem;
+}
+
+.designed__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: var(--heading-tracking);
+  color: var(--blue-900);
+  text-align: center;
+}
+
+.designed__illustration {
+  position: absolute;
+  top: 4.5rem;
+  left: calc(50% + 4.375rem);
+  max-width: none;
+  pointer-events: none;
+}
+
+.designed__features {
+  position: relative;
+  width: min(100%, 33.625rem);
+  margin-top: 6.5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .designed {
+    padding-block: 6.4375rem 16.75rem;
+  }
+
+  .designed__title {
+    font-size: 1.75rem;
+  }
+
+  .designed__illustration {
+    position: relative;
+    top: auto;
+    left: 50%;
+    width: 25.375rem;
+    height: auto;
+    margin-top: 2.6875rem;
+    translate: -50% 0;
+  }
+
+  .designed__features {
+    width: auto;
+    margin: 3.1875rem 0 0 0.5rem;
+  }
+
+  .designed__features > :first-child .feature-article__text {
+    margin-top: 0.875rem;
+  }
+}
