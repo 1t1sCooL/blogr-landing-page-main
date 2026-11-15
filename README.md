@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Vercel](https://blogr-landing-page-main.vercel.app/)
+- Solution URL: [Vercel](https://blogr-landing-page-main-brown-xi.vercel.app/)
 - Live Site URL: [mmalabugin.ru/BlogrLandingPage](https://mmalabugin.ru/BlogrLandingPage/)
 
 ## My process
